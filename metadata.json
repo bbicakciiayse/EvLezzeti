@@ -1,0 +1,7 @@
+{
+  "name": "EvLezzeti - Ev Yapımı Yemek Pazaryeri",
+  "description": "Ev yapımı yemek üreticileri ile otantik lezzet arayanları buluşturan güvenilir pazaryeri platformu.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
