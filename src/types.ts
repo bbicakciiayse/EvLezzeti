@@ -36,6 +36,8 @@ export interface User {
   rating?: number;
   reviewCount?: number;
   isVerified?: boolean;
+  bio?: string;
+  joinDate?: string;
 }
 
 export interface FoodItem {
@@ -48,6 +50,8 @@ export interface FoodItem {
   category: string;
   cuisineType: string;
   dietaryPreferences: string[]; // e.g., ['vejetaryen', 'glutensiz']
+  flavorProfiles: string[]; // e.g., ['Baharatlı', 'Umami']
+  occasions: string[]; // e.g., ['Özel Davet']
   image: string;
   rating: number;
   reviewCount: number;

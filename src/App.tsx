@@ -10,6 +10,9 @@ import { AddProductPage } from './pages/AddProductPage';
 import { LoginPage } from './pages/LoginPage';
 import { OrderTrackingPage } from './pages/OrderTrackingPage';
 import { OrdersPage } from './pages/OrdersPage';
+import { CookProfilePage } from './pages/CookProfilePage';
+import { TrustPage } from './pages/TrustPage';
+import { OnboardingPage } from './pages/OnboardingPage';
 import { AuthProvider } from './contexts/AuthContext';
 
 export default function App() {
@@ -21,8 +24,11 @@ export default function App() {
           <main className="flex-1">
             <Routes>
               <Route path="/" element={<HomePage />} />
+              <Route path="/onboarding" element={<OnboardingPage />} />
               <Route path="/explore" element={<ExplorePage />} />
               <Route path="/product/:id" element={<ProductDetailPage />} />
+              <Route path="/cook/:id" element={<CookProfilePage />} />
+              <Route path="/trust" element={<TrustPage />} />
               <Route path="/cart" element={<CartPage />} />
               <Route path="/seller/dashboard" element={<SellerDashboard />} />
               <Route path="/seller/onboarding" element={<SellerOnboardingPage />} />
